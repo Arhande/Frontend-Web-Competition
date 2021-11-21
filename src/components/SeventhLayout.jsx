@@ -78,24 +78,24 @@ function SeventhLayout() {
 				<div className="flex px-16 py-8 gap-x-6 text-lg">
 					<p
 						onClick={() => onChange(false)}
-						className={`${!terlaksana ? 'underline text-fourth' : 'cursor-pointer hover:text-fourth'}`}
+						className={`${!terlaksana ? 'underline text-fourthtailwind' : 'cursor-pointer hover:text-fourthtailwind'}`}
 					>
 						Semua
 					</p>
 					<p>|</p>
 					<p
 						onClick={() => onChange(true)}
-						className={`${terlaksana ? 'underline text-fourth' : 'cursor-pointer hover:text-fourth'}`}
+						className={`${terlaksana ? 'underline text-fourthtailwind' : 'cursor-pointer hover:text-fourthtailwind'}`}
 					>
 						Terlaksana
 					</p>
 				</div>
 			</div>
-			<div className="w-8/12 mx-auto grid justify-items-center items-center grid-cols-3 gap-10">
+			<div className="w-8/12 mx-auto grid justify-items-center items-center grid-cols-1 md:grid-cols-3 gap-4 md:gap-10">
 				{prokers.map(proker => (
 					<div className="p-3 border-2 border-gray-200 rounded-xl shadow-lg">
 						<img src={proker.image} alt="" />
-						<p className="text-center my-4 font-black text-third text-lg uppercase">{proker.name}</p>
+						<p className="text-center my-4 font-black text-thirdtailwind text-lg uppercase">{proker.name}</p>
 					</div>
 				))}
 			</div>

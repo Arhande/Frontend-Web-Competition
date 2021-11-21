@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer className="py-16 bg-third text-white flex w-full">
-			<div className="w-1/2">
+		<footer className="py-16 bg-thirdtailwind text-white flex flex-col md:flex-row  w-full">
+			<div className="md:w-1/2">
 				<div className="w-8/12 mx-auto">
 					<p className="text-xl font-bold">Hubungi Kami</p>
 					<div className="flex gap-x-8 my-6 items-center">
@@ -20,9 +20,9 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="w-1/2 ">
+			<div className="md:w-1/2 ">
 				<div className="w-8/12 mx-auto">
-					<p className="text-xl font-bold">Hubungi Kami</p>
+					<p className="text-xl font-bold hidden md:inline">Hubungi Kami</p>
 					<div className="flex gap-x-8 my-6 items-center">
 						<img src="./images/instagram.png" alt="" />
 						<img src="./images/twitter.png" alt="" />

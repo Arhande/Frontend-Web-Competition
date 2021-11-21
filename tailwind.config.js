@@ -4,10 +4,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#FFFBD9',
-				secondary: '#F3F407',
-				third: '#10305F',
-				fourth: '#FFC603',
+				primarytailwind: '#FFFBD9',
+				secondarytailwind: '#F3F407',
+				thirdtailwind: '#10305F',
+				fourthtailwind: '#FFC603',
 			},
 			height: {
 				xl: '30rem',
@@ -17,11 +17,12 @@ module.exports = {
 				xl: '30rem',
 				xxl: '50rem',
 			},
-			borderWidth:{
-				12: '12px'
+			borderWidth: {
+				12: '12px',
 			},
 		},
 	},
+	important: true,
 	variants: {
 		extend: {},
 	},

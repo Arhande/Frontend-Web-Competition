@@ -12,7 +12,7 @@ function EighthLayout() {
 	const MarkerComponent = ({ text }) => <div>{text}</div>;
 	return (
 		<div className="mb-24">
-			<div className="w-10/12 text-third mx-auto flex flex-col items-center gap-y-4">
+			<div className="w-10/12 text-thirdtailwind mx-auto flex flex-col items-center gap-y-4">
 				<div>
 					<img src="./images/gps-besar.png" alt="" />
 				</div>
@@ -20,8 +20,8 @@ function EighthLayout() {
 					<p>Fakultas Teknik</p>
 					<p>Universitas Muhammadiyah Jakarta</p>
 				</div>
-				<div className="border-12 rounded-lg border-third">
-					<div className="w-xxl h-xl ">
+				<div className="border-12 rounded-lg border-thirdtailwind">
+					<div className="w-64 h-48 md:w-xxl md:h-xl ">
 						<GoogleMapReact
 							bootstrapURLKeys={{ key: 'AIzaSyCLAn8LJIyVQu-6T5jT4fLXi5YxhgbqjX4' }}
 							defaultCenter={data.center}

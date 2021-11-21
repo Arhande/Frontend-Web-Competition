@@ -1,26 +1,43 @@
 import React from 'react';
+import { Button, Navbar, Nav, NavDropdown, Form, Container, FormControl } from 'react-bootstrap';
 
 function FirstLayout() {
 	return (
 		<div style={{ backgroundImage: "url('./images/bg-1.png')" }} className="h-screen bg-cover bg-no-repeat">
-			<div className="w-10/12 mx-auto relative">
-				<nav className="flex justify-between py-4">
-					<div className="flex items-center">
-						<img src="./images/logo.png" alt="logo" className="w-20 h-20" />
-						<p className="max-w-xs text-sm ml-4 font-semibold text-primary">
+			<div className="w-11/12 md:w-10/12 mx-auto relative">
+				<Navbar expand="lg">
+					<Container fluid>
+						<Navbar.Brand href="#">
+							<img src="./images/logo.png" alt="logo" className="w-20 h-20" />
+						</Navbar.Brand>
+						<p className="max-w-xs text-sm ml-4 text-white  font-semibold text-primary hidden lg:block">
 							HIMPUNAN MAHASISWA TEKNIK INFORMATIKA BADAN EKSEKUTIF MAHASISWA FAKULTAS TEKNIK UNIVERSITAS MUHAMMADIYAH
 							JAKARTA
 						</p>
-					</div>
-					<div className="flex gap-x-8 items-center text-lg text-primary">
-						<p className="text-secondary">Home</p>
-						<p>The Structure</p>
-						<p>Programs</p>
-						<p>Implemented</p>
-						<p>Location</p>
-					</div>
-				</nav>
-				<div className="flex justify-center item text-center mt-24 text-white font-bold text-5xl  leading-normal w-full">
+						<Navbar.Toggle aria-controls="navbarScroll" className="bg-white" />
+						<Navbar.Collapse id="navbarScroll">
+							<Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll></Nav>
+							<Nav className="my-2 my-lg-0 d-flex" style={{ maxHeight: '100px' }} navbarScroll>
+								<Nav.Link href="#action1" className="text-secondarytailwind">
+									Home
+								</Nav.Link>
+								<Nav.Link href="#action2" className="text-primarytailwind">
+									The Structure
+								</Nav.Link>
+								<Nav.Link href="#action2" className="text-primarytailwind">
+									Programs
+								</Nav.Link>
+								<Nav.Link href="#action2" className="text-primarytailwind">
+									Implemented
+								</Nav.Link>
+								<Nav.Link href="#action2" className="text-primarytailwind">
+									Location
+								</Nav.Link>
+							</Nav>
+						</Navbar.Collapse>
+					</Container>
+				</Navbar>
+				<div className="flex justify-center item text-center md:mt-24 text-white font-bold text-4xl leading-relaxed md:text-5xl md:leading-relaxed w-full">
 					<p className="max-w-5xl">
 						HIMPUNAN MAHASISWA TEKNIK INFORMATIKA BADAN EKSEKUTIF MAHASISWA FAKULTAS TEKNIK UNIVERSITAS MUHAMMADIYAH
 						JAKARTA PERIODE 2021

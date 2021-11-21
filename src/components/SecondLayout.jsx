@@ -33,13 +33,12 @@ function SecondLayout() {
 		pauseOnHover: true,
 		centerPadding: '200px',
 		adaptiveHeight: true,
-		nextArrow: <SampleNextArrow />,
-		prevArrow: <SamplePrevArrow />,
+		arrows: false
 	};
 	return (
 		<div className="py-24">
-			<div className="w-10/12 mx-auto flex items-center justify-center  ">
-				<div className="w-10/12">
+			<div className="md:w-10/12 mx-auto flex items-center justify-center  ">
+				<div className="w-full md:w-10/12 mx-auto ">
 					<Slider {...settings}>
 						<div>
 							<img src="./images/gambar-1.png" alt="" className="w-full" />
