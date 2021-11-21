@@ -1,0 +1,38 @@
+import React, { useState } from 'react';
+import GoogleMapReact from 'google-map-react';
+
+function EighthLayout() {
+	const data = {
+		center: {
+			lat: -6.171986362462043,
+			lng: 106.87262131134155,
+		},
+		zoom: 18,
+	};
+	const MarkerComponent = ({ text }) => <div>{text}</div>;
+	return (
+		<div className="mb-24">
+			<div className="w-10/12 text-third mx-auto flex flex-col items-center gap-y-4">
+				<div>
+					<img src="./images/gps-besar.png" alt="" />
+				</div>
+				<div className="text-center  font-bold">
+					<p>Fakultas Teknik</p>
+					<p>Universitas Muhammadiyah Jakarta</p>
+				</div>
+				<div className="border-12 rounded-lg border-third">
+					<div className="w-xxl h-xl ">
+						<GoogleMapReact
+							bootstrapURLKeys={{ key: 'AIzaSyCLAn8LJIyVQu-6T5jT4fLXi5YxhgbqjX4' }}
+							defaultCenter={data.center}
+							defaultZoom={data.zoom}
+						></GoogleMapReact>
+					</div>
+				</div>
+				<p className="mt-4">Alamat : Jl. Cempaka Putih 2 Tengah No. 27, Jakarta Pusat</p>
+			</div>
+		</div>
+	);
+}
+
+export default EighthLayout;
