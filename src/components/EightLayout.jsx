@@ -9,10 +9,9 @@ function EighthLayout() {
 		},
 		zoom: 18,
 	};
-	const MarkerComponent = ({ text }) => <div>{text}</div>;
 	return (
-		<div className="mb-24">
-			<div className="w-10/12 text-thirdtailwind mx-auto flex flex-col items-center gap-y-4">
+		<div className="mb-24" id="location">
+			<div className="w-10/12 text-thirdtailwind mx-auto flex flex-col items-center gap-y-4 text-3xl">
 				<div>
 					<img src="./images/gps-besar.png" alt="" />
 				</div>
@@ -29,7 +28,9 @@ function EighthLayout() {
 						></GoogleMapReact>
 					</div>
 				</div>
-				<p className="mt-4">Alamat : Jl. Cempaka Putih 2 Tengah No. 27, Jakarta Pusat</p>
+				<p className="mt-4 text-center text-lg md:text-3xl">
+					Alamat : Jl. Cempaka Putih 2 Tengah No. 27, Jakarta Pusat
+				</p>
 			</div>
 		</div>
 	);

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+// import * as framer from 'framer-motion';
+// import './styles.css';
 
 function SeventhLayout() {
 	const dataProker = [
@@ -73,7 +75,7 @@ function SeventhLayout() {
 	};
 
 	return (
-		<div className="py-24">
+		<div className="py-24" id="implemented">
 			<div className="w-10/12 mx-auto flex justify-center">
 				<div className="flex px-16 py-8 gap-x-6 text-lg">
 					<p
